@@ -1,1 +1,26 @@
-<p>shared-input works!</p>
+<ng-container *ngIf="type != 'date'; else date">
+  <mat-form-field [appearance]="'fill'" >
+
+    <input  matInput
+           [placeholder]="placeholder | titlecase"
+           [formControl]="control"
+           [type]="type"
+           [phoneDirective]="title">
+
+    <mat-error *ngIf="getControlError('email')">
+      Please enter a valid email address
+    </mat-error>
+
+  </mat-form-field>
+</ng-container>
+
+
+<!-- for date picker  -->
+<ng-template #date>
+  <mat-form-field appearance="fill">
+    <input matInput [matDatepicker]="picker" [placeholder]="placeholder" [formControl]="control">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</ng-template>

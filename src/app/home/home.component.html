@@ -1,0 +1,9 @@
+<section class="home p-20">
+
+    <app-sidebar-filter class="home__filter flex" [class.toggle-filter]="hideFilter"></app-sidebar-filter>
+
+
+  <app-employees-list class="home__employees" (toggleFilterEmitter)="hideFilter = !hideFilter"></app-employees-list>
+
+
+</section>

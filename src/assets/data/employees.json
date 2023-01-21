@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "ahmed",
+    "email": "ahmed@gmail.com",
+    "phone": "01254897877",
+    "company": "octo",
+    "date": "7/14/1996",
+    "country": "Egypt",
+    "salary":4000
+  },
+  {
+    "id": 2,
+    "name": "ali",
+    "email": "ali@gmail.com",
+    "phone": "01556789123",
+    "company": "octo",
+    "date": "7/14/1995",
+    "country": "Egypt",
+    "salary":5000
+  },
+  {
+    "id": 3,
+    "name": "filopateer",
+    "email": "filopateer.sobhy@gmail.com",
+    "phone": "01254897885",
+    "company": "octo",
+    "date": "7/14/1993",
+    "country": "Egypt",
+    "salary":60000
+  },
+  {
+    "id": 4,
+    "name": "abdallah",
+    "email": "abdallah@gmail.com",
+    "phone": "01154892585",
+    "company": "octo",
+    "date": "7/14/1992",
+    "country": "Egypt",
+    "salary":7000
+  },
+  {
+    "id": 5,
+    "name": "mohamed",
+    "email": "mohamed@gmail.com",
+    "phone": "01004897885",
+    "company": "octo",
+    "date": "7/14/1991",
+    "country": "Egypt",
+    "salary":8000
+  },
+  {
+    "id": 6,
+    "name": "fathy",
+    "email": "fathy@gmail.com",
+    "phone": "01004865885",
+    "company": "octo",
+    "date": "7/14/1999",
+    "country": "Egypt",
+    "salary":9000
+  },
+  {
+    "id": 7,
+    "name": "john",
+    "email": "john@gmail.com",
+    "phone": "01154897885",
+    "company": "octo",
+    "date": "7/14/1998",
+    "country": "Egypt",
+    "salary":1000
+  },
+  {
+    "id": 8,
+    "name": "tim",
+    "email": "tim@gmail.com",
+    "phone": "01005489787",
+    "company": "octo",
+    "date": "7/14/1990",
+    "country": "Egypt",
+    "salary":20000
+  },
+  {
+    "id": 9,
+    "name": "jack",
+    "email": "jack@gmail.com",
+    "phone": "01155897885",
+    "company": "octo",
+    "date": "7/14/1993",
+    "country": "Egypt",
+    "salary":40000
+  },
+  {
+    "id": 10,
+    "name": "mina",
+    "email": "mina@gmail.com",
+    "phone": "01136497885",
+    "company": "octo",
+    "date": "7/14/1994",
+    "country": "Egypt",
+    "salary":30000
+  }
+]

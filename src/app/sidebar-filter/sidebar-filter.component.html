@@ -1,0 +1,28 @@
+<mat-card class="py-15 pb-50 mat-elevation-z8">
+
+<h2 class="filter__header">FILTERS</h2>
+
+  <mat-divider></mat-divider>
+
+
+  <form [formGroup]="filterForm" class="py-15" >
+    <div *ngFor="let input of filters$ |async" class="px-15">
+      <shared-input [control]="getFormField(input.title)" [placeholder]="input.title" [title]="input.title.toLocaleLowerCase()" [type]="input.type.toLowerCase()" ></shared-input>
+    </div>
+  </form>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" class="filter__btn" (click)="filter()">
+      <mat-icon>filter_list</mat-icon>
+      <span>Filter</span>
+    </button>
+    <button mat-raised-button color="warn" class="filter__btn" (click)="clear()">
+      <mat-icon>delete</mat-icon>
+      <span>clear</span>
+    </button>
+  </mat-card-actions>
+
+
+</mat-card>
+
+

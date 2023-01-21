@@ -1,0 +1,19 @@
+.home {
+display: flex;
+// flex-wrap: wrap;
+width: 100%;
+gap: 15px;
+&__filter{
+  flex-basis: 20%;
+  transition: all .5s;
+
+}
+&__employees{
+  flex:1 0 70%;
+  transition: all .5s .5s;
+}
+
+.toggle-filter{
+margin-left: calc(-20% - 19px);
+}
+}

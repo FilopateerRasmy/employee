@@ -1,0 +1,13 @@
+.filter{
+  &__header{
+    text-align: center;
+  }
+
+  &__btn{
+    margin: auto;
+  }
+}
+.mat-divider {
+  border-top-color: rgb(0 0 0 / 44%);
+  border-top-width:2px;
+}

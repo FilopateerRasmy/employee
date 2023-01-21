@@ -1,0 +1,25 @@
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.44);
+  input {
+    width: 90%;
+    outline: none;
+    border: none;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.607);
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+    }
+  }
+
+  button {
+    width: 30px;
+    height: 30px;
+
+  }
+}
