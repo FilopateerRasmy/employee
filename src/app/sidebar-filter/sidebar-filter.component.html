@@ -6,9 +6,23 @@
 
 
   <form [formGroup]="filterForm" class="py-15" >
-    <div *ngFor="let input of filters$ |async" class="px-15">
-      <shared-input [control]="getFormField(input.title)" [placeholder]="input.title" [title]="input.title.toLocaleLowerCase()" [type]="input.type.toLowerCase()" ></shared-input>
-    </div>
+    <ng-container *ngIf="filters$ |async as filters">
+
+
+      <div *ngFor="let input of filters" class="px-15">
+        <ng-container *ngIf="input.type === 'dropdown' && (countries$ | async ) as countries; else sharedInput">
+          <app-custom-dropdown [control]="getFormField(input.title)" [data]="countries" [placeholder]="input.title"></app-custom-dropdown>
+        </ng-container>
+
+        <ng-template #sharedInput>
+        <shared-input [control]="getFormField(input.title)" [placeholder]="input.title" [title]="input.title.toLocaleLowerCase()" [type]="input.type.toLowerCase()" ></shared-input>
+
+        </ng-template>
+      </div>
+
+
+    </ng-container>
+
   </form>
 
   <mat-card-actions>

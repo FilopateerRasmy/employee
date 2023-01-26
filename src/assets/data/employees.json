@@ -6,7 +6,7 @@
     "phone": "01254897877",
     "company": "octo",
     "date": "7/14/1996",
-    "country": "Egypt",
+    "country": "GBR",
     "salary":4000
   },
   {
@@ -16,7 +16,7 @@
     "phone": "01556789123",
     "company": "octo",
     "date": "7/14/1995",
-    "country": "Egypt",
+    "country": "GRC",
     "salary":5000
   },
   {
@@ -26,7 +26,7 @@
     "phone": "01254897885",
     "company": "octo",
     "date": "7/14/1993",
-    "country": "Egypt",
+    "country": "BVT",
     "salary":60000
   },
   {
@@ -36,7 +36,7 @@
     "phone": "01154892585",
     "company": "octo",
     "date": "7/14/1992",
-    "country": "Egypt",
+    "country": "JOR",
     "salary":7000
   },
   {
@@ -46,7 +46,7 @@
     "phone": "01004897885",
     "company": "octo",
     "date": "7/14/1991",
-    "country": "Egypt",
+    "country": "EGY",
     "salary":8000
   },
   {
@@ -56,7 +56,7 @@
     "phone": "01004865885",
     "company": "octo",
     "date": "7/14/1999",
-    "country": "Egypt",
+    "country": "PSE",
     "salary":9000
   },
   {
@@ -66,7 +66,7 @@
     "phone": "01154897885",
     "company": "octo",
     "date": "7/14/1998",
-    "country": "Egypt",
+    "country": "CHE",
     "salary":1000
   },
   {
@@ -76,7 +76,7 @@
     "phone": "01005489787",
     "company": "octo",
     "date": "7/14/1990",
-    "country": "Egypt",
+    "country": "USA",
     "salary":20000
   },
   {
@@ -86,7 +86,7 @@
     "phone": "01155897885",
     "company": "octo",
     "date": "7/14/1993",
-    "country": "Egypt",
+    "country": "ECU",
     "salary":40000
   },
   {
@@ -96,7 +96,7 @@
     "phone": "01136497885",
     "company": "octo",
     "date": "7/14/1994",
-    "country": "Egypt",
+    "country": "EGY",
     "salary":30000
   }
 ]

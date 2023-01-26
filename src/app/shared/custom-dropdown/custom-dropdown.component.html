@@ -1,0 +1,11 @@
+
+<mat-form-field appearance="fill">
+  <mat-label>{{placeholder | titlecase}}</mat-label>
+  <mat-select [formControl]="control">
+    <mat-option *ngFor="let item of paginatedData" [value]="item.cca3">
+      {{item.name.common}}
+    </mat-option>
+    <mat-paginator [pageSize]="10" [length]="pageLength" (page)="pageChange($event)"></mat-paginator>
+  </mat-select>
+
+</mat-form-field>

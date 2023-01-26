@@ -10,6 +10,7 @@ import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ToastMessageComponent } from '../shared/toast-message/toast-message.component';
 import { of } from 'rxjs';
+import { CountriesService } from '../services/countries.service';
 
 @Component({
   selector: 'app-sidebar-filter',
@@ -26,8 +27,10 @@ export class SidebarFilterComponent {
     // in case you want to populate form from queryparameters
     // concatMap(res => this.initFormWithExisitingQuerParams(res) )
   )
+  countries$= this.coutriesService.getCountries$.pipe(tap(res => console.log))
+
   filterForm = new FormGroup({})
-  constructor(private filtersService: FiltersService, private router: Router, private snackBar: MatSnackBar, private route:ActivatedRoute) { }
+  constructor(private filtersService: FiltersService, private router: Router, private snackBar: MatSnackBar, private route:ActivatedRoute, private coutriesService:CountriesService) { }
 
   getFormField(fieldName: string) {
     return this.filterForm.get(fieldName) as FormControl;
@@ -45,9 +48,9 @@ export class SidebarFilterComponent {
   }
 
   filter() {
-    debugger;
+
     if (this.filterForm.invalid) {
-      this.snackBar.openFromComponent(ToastMessageComponent, { duration: 5000, horizontalPosition: 'center', verticalPosition: 'top' })
+      this.snackBar.openFromComponent(ToastMessageComponent, { duration: 5000, horizontalPosition: 'center', verticalPosition: 'top', data:{title:'Invalid Form Data!!'} })
       return
     }
 
@@ -74,7 +77,7 @@ export class SidebarFilterComponent {
       this.router.navigate([], {queryParams:filters})
     }
   }
-// in case you want to populate form from queryparameters
+// in case you want to populate form values from queryparameters
 //   initFormWithExisitingQuerParams(data:IFilter[]){
 //  return   this.route.queryParamMap.pipe(
 //       tap((params:ParamMap) => {
